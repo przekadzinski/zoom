@@ -1,0 +1,43 @@
+*{margin:0;
+padding:0;
+box-sizing: border-box;}
+
+body{
+    position: relative;
+    height: 100vh;
+}
+
+.zoomOnHover { 
+    position: relative;
+    top:50%;
+    left: 20%;
+    transform: translateY(-50%);
+    /* border: 1px solid black; */
+}
+
+img{
+    width: 450px;
+    height: 300px;
+    cursor:zoom-in;
+}
+
+.imgZoomLens{
+    position: absolute;
+    /* border:1px solid black; */
+    width:40px;
+    height:40px;
+    
+
+}
+.imgZoom{
+    position: absolute;
+    top:0;
+    left: 500px;
+    border: 1px solid gray; 
+    width: 450px; 
+    height: 370px;
+    box-shadow: 0 0 8px 0 gray;
+    visibility: hidden;
+    
+}
+

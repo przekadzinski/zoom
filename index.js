@@ -8,9 +8,9 @@ const style = result.style
 
 
 const moveLens = (e) => {
-
+    result.classList.add('active');
     const url = image.getAttribute("src");
-    style.visibility = "visible";
+    // style.visibility = "visible";
     let posX = e.offsetX;
     let posY = e.offsetY;
     style.backgroundImage = `url("${url}")`;
@@ -18,7 +18,8 @@ const moveLens = (e) => {
 }
 
 const hiddenResult = () => {
-    style.visibility = "hidden"
+    // style.visibility = "hidden"
+    result.classList.remove('active')
 }
 
 
